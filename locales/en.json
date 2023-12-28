@@ -1,0 +1,20 @@
+{
+    "Common": {
+        "loading": "LOADING..."
+    },
+    "NavPanel": {
+        "home": "Home",
+        "other": "Other",
+        "blog": "Blog",
+        "about": "About",
+        "profile": "Profile"
+    },
+    "Index": {
+        "title": "Index Title"
+    },
+    "Metadata": {
+        "Index": {
+            "title": "Index Page"
+        }
+    }
+}

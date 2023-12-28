@@ -1,0 +1,11 @@
+@import './spaces.scss';
+@import './typography.scss';
+
+body > .ant-layout {
+  min-height: 100vh;
+}
+
+// Added to suppress react-scripts iframe which blocks mouse events
+iframe {
+  z-index: -1000000 !important;
+}
