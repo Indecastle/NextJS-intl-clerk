@@ -34,11 +34,7 @@ export default authMiddleware({
       const matched = req.nextUrl.pathname.match(pattern)
       const locale = matched ? matched[2] : 'en'
 
-      if (auth.isPublicRoute) {
-        return NextResponse.next();
-      } else {
-        return NextResponse.rewrite(new URL(`/${locale}/404`, req.url));
-      }
+      return NextResponse.rewrite(new URL(`/${locale}/not-found`, req.url));
       // return redirectToSignIn({ returnBackUrl: req.url });
     }
 

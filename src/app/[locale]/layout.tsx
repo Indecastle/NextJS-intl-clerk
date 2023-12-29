@@ -67,13 +67,13 @@ async function LoadingComponent({ locale }: { locale: string }) {
     <ClerkLoading>
       <div className="clerk-loading">
         <h1 style={{ color: colorPrimary }}>
-          <span className="let1">l</span>
-          <span className="let2">o</span>
-          <span className="let3">a</span>
-          <span className="let4">d</span>
-          <span className="let5">i</span>
-          <span className="let6">n</span>
-          <span className="let7">g</span>
+          {t("loading")
+            .split("")
+            .map((c, i) => (
+              <span key={i} className={`let${i + 1}`}>
+                {c}
+              </span>
+            ))}
         </h1>
       </div>
     </ClerkLoading>

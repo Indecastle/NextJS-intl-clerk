@@ -2,10 +2,10 @@
 
 import { useTranslations } from "next-intl";
 import { Page } from "@/components/Page";
-import { getTranslations } from "next-intl/server";
 
 export default function NotFound() {
-  // const t = useTranslations("Index");
+  const t = useTranslations("Errors");
+
   return (
     <Page htmlTitle="ServiceInfo">
       <Page.Paths>
@@ -14,11 +14,8 @@ export default function NotFound() {
 
       <Page.Body>
         <div className="text-center">
-          <h2>Oh no! This page can't be found.</h2>
-          <p>
-            We're sorry but this page is either missing or the web address isn't
-            quite right.
-          </p>
+          <h2>{t("notFoundStep1")}</h2>
+          <p>{t("notFoundStep2")}</p>
         </div>
       </Page.Body>
     </Page>

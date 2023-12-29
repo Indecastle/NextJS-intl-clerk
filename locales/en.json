@@ -1,6 +1,10 @@
 {
     "Common": {
-        "loading": "LOADING..."
+        "loading": "LOADING"
+    },
+    "Errors": {
+        "notFoundStep1": "Oh no! This page can't be found.",
+        "notFoundStep2": "We're sorry but this page is either missing or the web address isn't quite right."
     },
     "NavPanel": {
         "home": "Home",
